@@ -1,0 +1,16 @@
+{
+  "id": "73723e78-cd8d-4cfd-bc01-7bee8ddf6d4b",
+  "name": "BugBot",
+  "description": null,
+  "default_flow": "Default",
+  "flows": [
+    {
+      "name": "Default",
+      "description": "Default custom flow",
+      "commands": []
+    }
+  ],
+  "files": [],
+  "functions": [],
+  "apps": []
+}

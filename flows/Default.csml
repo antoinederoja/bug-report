@@ -1,0 +1,32 @@
+start:
+  say "Hello, I'm here to help you report bugs"
+  goto title
+
+title:
+  say "Can you please precisely describe the bug ?"
+  hold
+  remember descr = event
+  goto reproduce
+
+reproduce:
+  say "Have you been ablt to reproduce the bug, if so, how ?"
+  hold
+  remember repro = event
+  goto title
+
+title:
+  say "What your bug title ?"
+  hold
+  remember title = event
+  goto screenshot
+
+screenshot:
+  say "Can you please send me a screenshot if you have one ?"
+  hold
+  // Need to be able to get the screenshot here
+  goto save
+
+save:
+  // The datas must be sent to a Ifttt webhook
+  say "I have send to bug to the IT guys !"
+  goto end
