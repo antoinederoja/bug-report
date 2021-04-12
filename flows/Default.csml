@@ -1,8 +1,8 @@
 start:
   say "Hello, I'm here to help you report bugs"
-  goto title
+  goto description
 
-title:
+description:
   say "Can you please precisely describe the bug ?"
   hold
   remember descr = event
